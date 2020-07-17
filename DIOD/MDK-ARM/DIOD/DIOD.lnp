@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"diod\startup_stm32f103xb.o"
+"diod\main.o"
+"diod\stm32f1xx_it.o"
+"diod\stm32f1xx_hal_msp.o"
+"diod\system_stm32f1xx.o"
+"diod\stm32f1xx_hal_gpio_ex.o"
+"diod\stm32f1xx_hal_tim.o"
+"diod\stm32f1xx_hal_tim_ex.o"
+"diod\stm32f1xx_hal.o"
+"diod\stm32f1xx_hal_rcc.o"
+"diod\stm32f1xx_hal_rcc_ex.o"
+"diod\stm32f1xx_hal_gpio.o"
+"diod\stm32f1xx_hal_dma.o"
+"diod\stm32f1xx_hal_cortex.o"
+"diod\stm32f1xx_hal_pwr.o"
+"diod\stm32f1xx_hal_flash.o"
+"diod\stm32f1xx_hal_flash_ex.o"
+--library_type=microlib --strict --scatter "DIOD\DIOD.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DIOD.map" -o DIOD\DIOD.axf
